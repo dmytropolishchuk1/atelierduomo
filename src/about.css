@@ -1,0 +1,44 @@
+.holder{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width:100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+ul{
+    padding-left: 0px !important;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+}
+
+.rowie{
+    display: flex;
+    flex-direction: row;
+    text-align: baseline;
+}
+
+.rowie p{
+    font-size: auto;
+}
+
+.ctgr{
+    text-shadow: rgb(37, 37, 37) 3px 0 4px;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    .container{
+        margin-top: 15%;
+    }
+}
