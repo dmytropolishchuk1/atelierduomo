@@ -18,7 +18,7 @@ function Landing(){
         navigate(path);
         // Optionally reset the animation state if staying on the same page/component
         setAnimate(false);
-      }, 500); // Match the duration of your CSS transition
+      }, 1000); // Match the duration of your CSS transition
     };
 
     useEffect(() => {

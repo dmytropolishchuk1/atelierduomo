@@ -157,7 +157,7 @@ img#draggableImage{
     }
 }
 .landing {
-    transition: transform 0.5s ease;
+    transition: transform 1s ease-in-out;
   }
   
   .slide-down {
