@@ -43,6 +43,7 @@ function App(){
         <div className="App">
           <Router>
           <Routes>
+          <Route path="" element={<><Header /><Landing /></>} />
           <Route path="/" element={<><Header /><Landing /></>} />
           <Route path="/shop" element={<><Header /><Shop /></>} />
           <Route path="/product/:productPath" element={<><Header/><ProductPage /></>} />
