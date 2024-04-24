@@ -21,7 +21,7 @@ function About(){
          </ul>
     </div>
 </div> 
-    )
+    );
 }
 
 export default About;

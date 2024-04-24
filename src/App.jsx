@@ -22,12 +22,12 @@ function App(){
           <Route path="/product/:productPath" element={<><Header/><ProductPage /></>} />
           <Route path="/about" element={<><Header /><About /></>} />
           <Route path="/lookbook" element={<><Header/><Lookbook /></>}/>
-          <Route path="/contacts" element={<><Header/>< Contacts/></>}/>
-          <Route path="/cart" element={<><Header/>< Cart/></>}/>
+          <Route path="/contacts" element={<><Header/><Contacts/></>}/>
+          <Route path="/cart" element={<><Header/><Cart/></>}/>
           </Routes>
           </Router>
     </div>
-    )
+    );
 }
 
 export default App;

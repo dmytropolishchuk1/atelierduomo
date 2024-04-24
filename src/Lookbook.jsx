@@ -66,7 +66,7 @@ function Lookbook(){
 </div>
 
         </div>
-    )
+    );
 }
 
 export default Lookbook;

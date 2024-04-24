@@ -48,7 +48,7 @@ function Landing(){
     </div>
         <div className="green-mask"></div>
         </div>
-    )
+    );
 }
 
 export default Landing;

@@ -10,7 +10,7 @@ function Cart(){
 
 <div className="cont-holder"><div className="continue"><a href="/shop">continue shopping</a></div></div>
         </div>
-    )
+    );
 }
 
 export default Cart;
