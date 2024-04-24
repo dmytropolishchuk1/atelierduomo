@@ -156,7 +156,7 @@ img#draggableImage{
         height:20%;
     }
 }
-.landing {
+.landing .linky{
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
