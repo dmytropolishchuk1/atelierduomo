@@ -3,7 +3,7 @@ import "./about.css";
 
 function About(){
     return(
-        <div className="holder">
+        <div className="holder" >
     <div className="container">
         <div><p className="ctgr">about (00)</p></div>
         <br/>
