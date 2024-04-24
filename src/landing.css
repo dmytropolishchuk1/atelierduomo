@@ -156,10 +156,13 @@ img#draggableImage{
         height:20%;
     }
 }
-.landing, body {
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+.landing {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .slide-down {
-    transform: translateY(100vh); /* Adjust as needed */
+    opacity: 0;
+    pointer-events: none;
   }
+  

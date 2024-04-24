@@ -18,7 +18,7 @@ function Landing(){
         navigate(path);
         // Optionally reset the animation state if staying on the same page/component
         setAnimate(false);
-      }, 800); // Match the duration of your CSS transition
+      }, 300); // Match the duration of your CSS transition
     };
 
     useEffect(() => {
@@ -39,12 +39,12 @@ function Landing(){
         }, []); // Empty dependency array means this effect runs only once on mount
        
     return(
-        <div className={`landing ${animate ? 'slide-down' : ''}`}>
+        <div className={`landing`}>
     <div className="linkyholder">
-        <div className="linky"><a id="shop" href="javascript:void(0)" onClick={() => handleClick('/shop')}><p>shop</p></a></div>
-        <div className="linky"><a id="about" href="javascript:void(0)" onClick={() => handleClick('/about')}><p>about</p></a></div>
-        <div className="linky"><a id="lookbook" href="javascript:void(0)" onClick={() => handleClick('/lookbook')}><p>lookbook</p></a></div>
-        <div className="linky"><a id="contacts" href="javascript:void(0)" onClick={() => handleClick('/contacts')}><p>contact us</p></a></div>
+        <div className={`linky ${animate ? 'slide-down' : ''}`}><a id="shop" href="javascript:void(0)" onClick={() => handleClick('/shop')}><p>shop</p></a></div>
+        <div className={`linky ${animate ? 'slide-down' : ''}`}><a id="about" href="javascript:void(0)" onClick={() => handleClick('/about')}><p>about</p></a></div>
+        <div className={`linky ${animate ? 'slide-down' : ''}`}><a id="lookbook" href="javascript:void(0)" onClick={() => handleClick('/lookbook')}><p>lookbook</p></a></div>
+        <div className={`linky ${animate ? 'slide-down' : ''}`}><a id="contacts" href="javascript:void(0)" onClick={() => handleClick('/contacts')}><p>contact us</p></a></div>
     </div>
         <div className="green-mask"></div>
         </div>
