@@ -157,9 +157,9 @@ img#draggableImage{
     }
 }
 .landing, body {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .slide-down {
-    transform: translateY(-100vh); /* Adjust as needed */
+    transform: translateY(100vh); /* Adjust as needed */
   }
