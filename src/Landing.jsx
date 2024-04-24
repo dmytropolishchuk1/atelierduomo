@@ -42,9 +42,9 @@ function Landing(){
         <div className={`landing ${animate ? 'slide-down' : ''}`}>
     <div className="linkyholder">
         <div className="linky"><a id="shop" href="javascript:void(0)" onClick={() => handleClick('/shop')}><p>shop</p></a></div>
-        <div className="linky"><a id="about" href="/about"><p>about</p></a></div>
-        <div className="linky"><a id="lookbook" href="/lookbook"><p>lookbook</p></a></div>
-        <div className="linky"><a id="contacts" href="/contacts"><p>contact us</p></a></div>
+        <div className="linky"><a id="about" href="javascript:void(0)" onClick={() => handleClick('/about')}><p>about</p></a></div>
+        <div className="linky"><a id="lookbook" href="javascript:void(0)" onClick={() => handleClick('/lookbook')}><p>lookbook</p></a></div>
+        <div className="linky"><a id="contacts" href="javascript:void(0)" onClick={() => handleClick('/contacts')}><p>contact us</p></a></div>
     </div>
         <div className="green-mask"></div>
         </div>
