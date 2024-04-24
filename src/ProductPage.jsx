@@ -19,11 +19,11 @@ const [selectedSize, setSelectedSize] = useState(null);
             const sizes = [' s ', ' m ', ' l ', ' xl ', ' xxl '];
   return (
 
-<div class="product-page">
-    <div class="product-carousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+<div className="product-page">
+    <div className="product-carousel">
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
@@ -34,32 +34,32 @@ const [selectedSize, setSelectedSize] = useState(null);
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"></li>
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src={product.imgSrc} alt="First slide"/>
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img className="d-block w-100" src={product.imgSrc} alt="First slide"/>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src={product.imgSrc2} alt="Second slide"/>
+                <div className="carousel-item">
+                    <img className="d-block w-100" src={product.imgSrc2} alt="Second slide"/>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src={product.imgSrc3} alt="Third slide"/>
+                <div className="carousel-item">
+                    <img className="d-block w-100" src={product.imgSrc3} alt="Third slide"/>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true">  &lt;---  </span>
-                <span class="visually-hidden">Previous</span>
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true">  &lt;---  </span>
+                <span className="visually-hidden">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true">  ---&gt;  </span>
-                <span class="visually-hidden">Next</span>
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true">  ---&gt;  </span>
+                <span className="visually-hidden">Next</span>
             </a>
         </div>
     </div>
 
-    <div class="product-description">
-        <div class="pr-title"><h1>{product.description}</h1><div class="product-status"><p>sold out</p></div></div>
-        <div class="box">
-            <div class="price"><p>${product.price}</p></div>
+    <div className="product-description">
+        <div className="pr-title"><h1>{product.description}</h1><div className="product-status"><p>sold out</p></div></div>
+        <div className="box">
+            <div className="price"><p>${product.price}</p></div>
 
 
 
@@ -75,9 +75,9 @@ const [selectedSize, setSelectedSize] = useState(null);
       </a>
     ))}
   </div>
-        <a class="atc" href='javascript:void(0)'>add to cart</a>
+        <a className="atc" href='javascript:void(0)'>add to cart</a>
         </div>
-        <div class="about">
+        <div className="about">
             <p>about</p>
             <p>{product.about}</p>
         </div>

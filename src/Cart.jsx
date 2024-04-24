@@ -3,12 +3,12 @@ import React from "react";
 function Cart(){
     return(
         <div>
- <div class="top-holder"><p>cart (00)</p></div>
+ <div className="top-holder"><p>cart (00)</p></div>
 
-<div class="cart-holder"><div class="empty-cart"><p>your cart is empty</p></div></div>
-<hr class="hr"/>
+<div className="cart-holder"><div className="empty-cart"><p>your cart is empty</p></div></div>
+<hr className="hr"/>
 
-<div class="cont-holder"><div class="continue"><a href="/shop">continue shopping</a></div></div>
+<div className="cont-holder"><div className="continue"><a href="/shop">continue shopping</a></div></div>
         </div>
     )
 }
