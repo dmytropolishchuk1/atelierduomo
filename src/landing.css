@@ -156,10 +156,10 @@ img#draggableImage{
         height:20%;
     }
 }
-.landing {
+.landing, body {
     transition: transform 1s ease-in-out;
   }
   
   .slide-down {
-    transform: translateY(100vh); /* Adjust as needed */
+    transform: translateY(-100vh); /* Adjust as needed */
   }
