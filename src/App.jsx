@@ -10,10 +10,31 @@ import Contacts from "./Contacts";
 import Cart from "./Cart";
 import "./index.css";
 
-
+class ErrorBoundary extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { hasError: false };
+    }
+  
+    static getDerivedStateFromError(error) {
+      // Update state to indicate an error has occurred
+      return { hasError: true };
+    }
+  
+    componentDidCatch(error, errorInfo) {
+      // Log the error to an error reporting service
+      console.error('Error caught by ErrorBoundary:', error, errorInfo);
+    }
+  
+    render() {
+      return this.props.children;
+    }
+  }
+  
 
 function App(){
     return(
+        <ErrorBoundary>
         <div className="App">
           <Router>
           <Routes>
@@ -27,6 +48,7 @@ function App(){
           </Routes>
           </Router>
     </div>
+    </ErrorBoundary>
     );
 }
 
